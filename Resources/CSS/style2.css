@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    border: 0;
+}
+/* pc header */
+#pcheader {
+    height: 64px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    border-bottom: 1px grey solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pclogo {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    font-family: Roboto;
+}
+#logospan {
+    color: rgba(128, 128, 128, 0.8);
+}
+.pcheadlinks {
+    display: flex;
+    margin-right: 24px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+}
+.pcheadlinks a {
+    text-decoration: none;
+    color: black;
+    margin-left: 16px;
+}
+.pcheadlinks a:hover {
+    text-decoration: underline;
+}
+/* mobile header */
+
+#mobileheader {
+    height: 64px;
+    width: 100%;
+    border-bottom: 1px grey solid;
+    background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    #mobileheader {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #pcheader {
+        display: none !important;
+    }
+    #mobileheader {
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 64px;
+    }
+    #mobileheader img {
+        width: 1.5rem;
+    }
+    .contentspace {
+        display: none;
+    }
+}
+.contentspace {
+    height: 64px;
+}
+/* Sign up PC */
+
+.signupcontainerpc {
+    max-width: 100%;
+    max-height: 1100px;
+    background-color: rgb(241, 239, 239);
+    display: flex;
+    justify-content: space-between;
+}
+.bannerpc {
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannerpc img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 180px;
+    margin-bottom: 80px;
+    border-radius: 50%;
+}
+.signuptext {
+    margin-left: 100px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.8rem;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+a.starthere {
+    font-family: Roboto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px grey solid;
+    padding: 8px 60px;
+    font-size: 20px;
+    border-radius: 0;
+    background-color: rgb(131, 130, 130);
+    margin-top: 20px;
+}
+.signuptext a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .signupcontainerpc {
+        display: none !important;
+    }
+    #signupcontainermobile {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        line-height: 2.7rem;
+        background-color: rgb(204, 200, 200);
+        padding-bottom: 60px;
+        text-align: center;
+        font-family: Montserrat;
+    }
+    #signupcontainermobile img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+    .startheremob {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        border: 1px black solid;
+        font-size: 20px;
+        background-color: rgb(180, 178, 178);
+        width: 30%;
+        margin-top: 32px;
+        border-radius: 10px;
+    }
+    #signupcontainermobile h1 {
+        padding-top: 32px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #signupcontainermobile {
+        display: none !important;
+    }
+}
+
+/* campus info pc */
+
+@media  only screen and (min-width: 768px) {
+    #campuscontainermob {
+        display: none !important;
+    }
+    #campuscontainerpc {
+        max-width: 100%;
+        height: auto;
+        background-color: rgb(228, 226, 226);
+        display: flex;
+        padding-bottom: 32px;
+        font-family: Montserrat;
+    }
+    .campusimg {
+        padding-top: 18px;
+        width: 60%;
+        height: auto;
+    }
+    .campusimg img {
+        width: 80%;
+        height: auto;
+        padding-top: 32px;
+        padding-left: 32px;
+        padding-bottom: 32px;
+    }
+    .campusinfotextleft {
+        max-width: 90%;
+        padding-left: 32px;
+        line-height: 2rem;
+    }
+    .campusinfotextleft h1 {
+        padding-bottom: 16px;
+    }
+    .campusimg2 {
+        width: 40%;
+        height: auto;
+        border-left: 1px rgb(197, 193, 193) solid;
+        margin-top: 32px;
+        display: flex;
+        flex-flow: column;
+    }
+    .campusinfo1,
+    .campusinfo2,
+    .campusinfo3 {
+        display: flex;
+        height: 33%;
+        
+    }
+    .campusinfo1 img,
+    .campusinfo2 img,
+    .campusinfo3 img {
+        width: 35%;
+        height: auto;
+        padding: 16px 16px;
+    }
+    .campusinfo2 {
+        border-top: 1px rgb(197, 193, 193) solid;
+        border-bottom: 1px rgb(197, 193, 193) solid;
+    }
+    .infotext {
+        padding-top: 16px;
+        line-height: 1.8rem;
+    }
+    .infotext a {
+        text-decoration: none;
+    }
+    .infotext a:hover {
+        text-decoration: underline;
+    }
+}
+/* campus info mobile */
+
+@media only screen and (max-width: 768px) {
+    #campuscontainerpc {
+        display: none !important;
+    }
+    #campuscontainermob {
+        background-color: rgb(218, 216, 216);
+    }
+    .campusmobile {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding-bottom: 64px;
+        padding-top: 32px;
+        line-height: 2.5rem;
+        border-bottom: 1px rgb(197, 193, 193) solid;
+        font-family: Montserrat;
+    }
+    .campusmobile img {
+        max-width: 80%;
+        height: auto;
+    }
+    .campusmobile h2 {
+        padding-top: 16px;
+    }
+}
+
+/*Start Learning PC*/
+
+@media only screen and  (min-width: 768px) {
+    .learningtitlemobcontainer,
+    #startlearningmobile,
+    .moblearningcontainer {
+        display: none !important;
+    }
+    #startlearningpccon {
+        background-color: rgb(221, 218, 218);
+    }
+    .startlearningtitlepc {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-family: Montserrat;
+    }
+    .startlearningitems {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .startlearningitem {
+        width: 30%;
+        height: auto;
+        padding-bottom: 48px;
+        line-height: 2rem;
+    }
+    .startlearningitem img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*Start Learning mobile*/
+
+@media only screen and (max-width: 768px) {
+    #startlearningpccon {
+        display: none !important;
+    }
+    .learningtitlemobcontainer {
+        max-width: 100%;
+        height: auto;
+        background-color: rgba(141, 141, 141, 0.3);
+    }
+    .learningtitlemobcontainer h1 {
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 48px;
+        font-family: Montserrat;
+    }
+    .moblearningcontainer {
+        max-width: 100%;
+        height: auto;
+        background-color: rgba(141, 141, 141, 0.3);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    
+    }
+    .moblearningtextcon {
+        width: 90%;
+        height: auto;
+        background-color: rgba(141, 141, 141, 0.4);
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .moblearningtextcon h3 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .moblearningtextcon a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+/*********************/
+@media only screen and (max-width: 768px) {
+    .thesispctitle,
+    #thesispc {
+        display: none;
+    }
+}
+#mobilefooter{
+    background-color: rgba(165, 164, 164, 0.4);
+}
+.thesispctitle {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: Montserrat;
+    font-weight: 2rem;
+    background-color: rgba(141, 141, 141, 0.15);
+}
+.thesispccontainer {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 32px;
+    display: flex;
+    background-color: rgba(141, 141, 141, 0.15);
+}
+.thesisvidcontainer {
+    max-width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thesisvidcontainer video {
+    max-width: 95%;
+    height: auto;
+}
+.thesistextcontainer {
+    max-width: 40%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+}
+.thesistext1,
+.thesistext2 {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+.thesistext2 {
+    margin-top: 16px;
+}
+.thesistext1 img,
+.thesistext2 img {
+    max-width: 35%;
+    height: auto;
+}
+.thesistext {
+    padding-left: 32px;
+}
+.thesistext h2,
+.thesistext p {
+    line-height: 1.9rem;
+}
+.thesistext h2 {
+    padding-top: 16px;
+}
+.thesistext p {
+    margin-top: 32px;
+    font-family: Montserrat;
+}
+.thesistext1 h2,
+.thesistext2 h2 {
+    font-family: Roboto;
+}
+.reimagineurbanpc {
+    background-color: rgba(141, 141, 141, 0.15);
+    max-width: 100%;
+    height: auto;
+    padding-left: 22px;
+    
+}
+.reimagineurbanpc h2 {
+    padding-bottom: 32px;
+    font-family: Roboto;
+}
+.reimagineurbanpc p {
+    max-width: 60%;
+    height: auto;
+    padding-bottom: 32px;
+    line-height: 2rem;
+    font-family: Montserrat;
+}
+
+/*PC footer*/
+@media only screen and (max-width: 768px){
+    #pcfoot {
+        display: none;
+    }
+}
+
+#pcfooter {
+    border-top: 1px grey solid;
+    width: 100%;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: rgba(141, 141, 141, 0.3);
+    display: inline-flex;
+    justify-content: space-between;
+}
+#pcfooter p {
+    padding-left: 24px;
+}
+.pcfoothyperlink {
+    padding-right: 24px;
+}
+.pcfoothyperlink a{
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+}
+/*Mobile Footer*/
+
+@media only screen and (min-width: 768px) {
+    #mobilefooter,
+    .mobfoottitle,
+    .pcfootvideo,
+    .mobilecopyright {
+        display: none;
+    }
+}
+#mobilefooter {
+    display: flex;
+    flex-flow: column;
+}
+.mobfoottitle {
+    text-align: center;
+    font-family: Montserrat;
+    background-color: rgba(141, 141, 141, 0.1);
+    
+}
+.mobfoottitle h1 {
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+.pcfootvideo {
+    max-width: 100%;
+    height: auto;
+    background-color: rgba(141, 141, 141, 0.4);
+}
+.pcfootvideo video {
+    max-width: 100%;
+    height: auto;
+}
+.mobilecopyright {
+    max-width: 100%;
+    height: auto;
+    background-color: rgba(141, 141, 141, 0.4);
+}
+.mobilecopyright p {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    font-style: italic;
+}
