@@ -577,3 +577,60 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+
+/* On campus page */
+
+#oncampus {
+    width: 100%;
+    height: 93vh;
+    background: -webkit-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+    display: flex;
+}
+#campusmainwrap1 {
+    width: 50%;
+    height: 100%;
+}
+#campusmainwrap1img,
+#campusmainwrap2img {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#campusmainwrap1img img,
+#campusmainwrap2img img {
+    max-width: 60%;
+    height: auto;
+    align-self: center;
+    border-radius: 50%;
+}
+#campusmainwrap1text {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#campusmainwrap2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+#campusmainwrap2text {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#campusmainwrap1text p,
+#campusmainwrap2text p {
+    width: 75%;
+    line-height: 200%;
+    font-family: Montserrat;
+}
