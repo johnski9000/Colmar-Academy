@@ -2,7 +2,9 @@
     margin: 0;
     border: 0;
 }
+
 /* pc header */
+
 #pcheader {
     height: 64px;
     width: 100%;
@@ -13,15 +15,18 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .pclogo {
     display: flex;
     align-items: center;
     margin-left: 16px;
     font-family: Roboto;
 }
+
 #logospan {
     color: rgba(128, 128, 128, 0.8);
 }
+
 .pcheadlinks {
     display: flex;
     margin-right: 24px;
@@ -29,11 +34,13 @@
     font-size: 16px;
     font-weight: 600;
 }
+
 .pcheadlinks a {
     text-decoration: none;
     color: black;
     margin-left: 16px;
 }
+
 .pcheadlinks a:hover {
     text-decoration: underline;
 }
@@ -68,9 +75,11 @@
         display: none;
     }
 }
+
 .contentspace {
     height: 64px;
 }
+
 /* Sign up PC */
 
 .signupcontainerpc {
