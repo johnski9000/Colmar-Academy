@@ -12,6 +12,8 @@ main {
     align-items: center;
     justify-content: center;
     font-size: 18px;
+}
+body {
     background: url(/Resources/capstone_colmar_assets/images/login.jpg);
     background-size: cover;
 }
