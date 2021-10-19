@@ -13,10 +13,7 @@ main {
     justify-content: center;
     font-size: 18px;
 }
-body {
-    background: url(https://github.com/johnski9000/Colmar-Academy/blob/main/Resources/capstone_colmar_assets/images/login.jpg?raw=true);
-    background-size: cover;
-}
+
 
 .container {
     width: 400px;
